@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "esspresso-notes.github.io/notesdoc.schema.json",
+    "title": "Espresso Notes Document",
+    "description": "A Notes Document to be utilized by the various modules of the Espresso Notes application.",
+    "type": "object",
+    "properties": {
+        "documentID": {
+            "description": "A unique identifier for this document.",
+            "type": "string"
+        },
+        "title": {
+            "description": "The title of this document.",
+            "type": "string"
+        },
+        "author": {
+            "description": "The author of this document.",
+            "type": "string"
+        },
+        "lastModified": {
+            "description": "The date of the last modification of this document.",
+            "type": "integer"
+        },
+        "content": {
+            "description": "A list of all of the content blocks for this document.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "blockType": {
+                        "type": "string",
+                        "description": "The type of the content block."
+                    },
+                    "content": {
+                        "type": "string",
+                        "description": "The raw string of the content stored in this block."
+                    }
+                }
+            }
+        }
+    }
+}

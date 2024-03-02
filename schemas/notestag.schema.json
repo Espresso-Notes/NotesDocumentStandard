@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft/2020-12/schema",
+    "id" : "/schemas/notestag",
+    "title" : "Notes Tag Schema",
+    "description": "A Notes Tag object to be utilized by the Espresso Notes application.",
+    "type" : "object",
+    "properties": {
+        "notesID" : {
+            "description" : "The identifier for this Tag.",
+            "type" : "string"
+        },
+        "title" : {
+            "description" : "The title of this Tag.",
+            "type" : "string"
+        },
+        "description" : {
+            "description" : "The description of this Tag.",
+            "type" : "string"
+        }
+    }
+}

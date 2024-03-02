@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "esspresso-notes.github.io/notesdoc.schema.json",
+    "$id": "/schemas/notesdoc.schema.json",
     "title": "Espresso Notes Document",
     "description": "A Notes Document to be utilized by the various modules of the Espresso Notes application.",
     "type": "object",
@@ -25,17 +25,10 @@
             "description": "A list of all of the content blocks for this document.",
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "blockType": {
-                        "type": "string",
-                        "description": "The type of the content block."
-                    },
-                    "content": {
-                        "type": "string",
-                        "description": "The raw string of the content stored in this block."
-                    }
-                }
+                "anyOf" : [
+                   { "$ref" : "/schemas/codeblock"},
+                   { "$ref" : "/schemas/markdownblock"}
+                ]
             }
         }
     }

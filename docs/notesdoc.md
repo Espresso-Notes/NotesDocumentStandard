@@ -9,6 +9,8 @@
 - **`author`** *(string)*: The author of this document.
 - **`lastModified`** *(integer)*: The date of the last modification of this document.
 - **`content`** *(array)*: A list of all of the content blocks for this document.
-  - **Items** *(object)*
-    - **`blockType`** *(string)*: The type of the content block.
-    - **`content`** *(string)*: The raw string of the content stored in this block.
+  - **Items**
+    - **Any of**
+      - : Refer to *[/schemas/codeblock](#chemas/codeblock)*.
+      - : Refer to *[/schemas/markdownblock](#chemas/markdownblock)*.
+      - : Refer to *[/schemas/latexblock](#chemas/latexblock)*.

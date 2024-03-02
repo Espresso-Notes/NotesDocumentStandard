@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/codeblock",
+    "title": "Code Content Block",
+    "description": "A Code Block content block, for the Espresso Notes application.",
+    "type": "object",
+    "properties": {
+        "blockID": {
+            "description": "A unique identifier for this block.",
+            "type": "string"
+        },
+        "index" : {
+            "description" : "The index for this block in the document, for ordering purposes."
+        },
+        "content" : {
+            "description" : "The code contained in the block.",
+            "type" : "string"
+        },
+        "language" : {
+            "description" : "The programming language for this code.",
+            "type" : "string"
+        },
+        "tags" : {
+            "description" : "The array of NotesTags associated with this block.",
+            "type" : "array",
+            "items" : {
+                "$ref" : "/schemas/notestag"
+            }
+        }
+    }
+}

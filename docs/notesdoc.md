@@ -13,4 +13,3 @@
     - **Any of**
       - : Refer to *[/schemas/codeblock](#chemas/codeblock)*.
       - : Refer to *[/schemas/markdownblock](#chemas/markdownblock)*.
-      - : Refer to *[/schemas/latexblock](#chemas/latexblock)*.

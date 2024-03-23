@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/project.schema.json",
+    "title": "Espresso Notes Project",
+    "description": "A document defining the details of an Espresso Project.",
+    "type": "object",
+    "properties": {
+        "title" : {
+            "description" : "The title of this project.",
+            "type" : "string"
+        },
+        "description" : {
+            "description" : "The description of this project.",
+            "type" : "string"
+        },
+        "authors" : {
+            "description" : "The list of authors that have worked on this project.",
+            "type" : "array",
+            "items" : { "type" : "string" },
+            "minItems" : 1
+        }
+    }
+}

@@ -10,7 +10,8 @@
             "type": "string"
         },
         "index" : {
-            "description" : "The index for this block in the document, for ordering purposes."
+            "description" : "The index for this block in the document, for ordering purposes.",
+            "type" : "string"
         },
         "content" : {
             "description" : "The code contained in the block.",
